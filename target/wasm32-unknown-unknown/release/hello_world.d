@@ -1,0 +1,1 @@
+/home/bones/building-on-MANTRA-chain/target/wasm32-unknown-unknown/release/hello_world.wasm: /home/bones/building-on-MANTRA-chain/src/contract.rs /home/bones/building-on-MANTRA-chain/src/lib.rs /home/bones/building-on-MANTRA-chain/src/msg.rs /home/bones/building-on-MANTRA-chain/src/state.rs
