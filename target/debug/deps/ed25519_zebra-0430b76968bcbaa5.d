@@ -1,0 +1,11 @@
+/home/bones/building-on-MANTRA-chain/target/debug/deps/libed25519_zebra-0430b76968bcbaa5.rmeta: /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/lib.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/batch.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/error.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/signature.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/signing_key.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/verification_key.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/../README.md
+
+/home/bones/building-on-MANTRA-chain/target/debug/deps/ed25519_zebra-0430b76968bcbaa5.d: /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/lib.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/batch.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/error.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/signature.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/signing_key.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/verification_key.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/../README.md
+
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/lib.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/batch.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/error.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/signature.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/signing_key.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/verification_key.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-zebra-3.1.0/src/../README.md:

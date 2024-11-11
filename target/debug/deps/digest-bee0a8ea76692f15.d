@@ -1,0 +1,12 @@
+/home/bones/building-on-MANTRA-chain/target/debug/deps/libdigest-bee0a8ea76692f15.rmeta: /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/lib.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/ct_variable.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/rt_variable.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/wrapper.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/xof_reader.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/digest.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/mac.rs
+
+/home/bones/building-on-MANTRA-chain/target/debug/deps/digest-bee0a8ea76692f15.d: /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/lib.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/ct_variable.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/rt_variable.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/wrapper.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/xof_reader.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/digest.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/mac.rs
+
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/lib.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/ct_variable.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/rt_variable.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/wrapper.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/core_api/xof_reader.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/digest.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/digest-0.10.7/src/mac.rs:

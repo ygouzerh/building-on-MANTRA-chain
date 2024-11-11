@@ -28,17 +28,17 @@ export function useTodoContract() {
   }, [cosmWasmClient, account]);
 
   // Get signing client with better error handling
-  const getSigningClient = useCallback(async () => {
-    if (!window.keplr) throw new Error("Keplr not found");
-    await window.keplr.enable("mantra-hongbai-1");
-    const offlineSigner = window.keplr.getOfflineSigner("mantra-hongbai-1");
-    const gasPrice = GasPrice.fromString("0.025uaum");
-    return await SigningCosmWasmClient.connectWithSigner(
-      "https://rpc.hongbai.mantrachain.io",
-      offlineSigner,
-      { gasPrice }
-    );
-  }, []);
+ const getSigningClient = useCallback(async () => {
+  if (!window.keplr) throw new Error("Keplr not found");
+  await window.keplr.enable("mantra-dukong-1");  // Updated chain ID
+  const offlineSigner = window.keplr.getOfflineSigner("mantra-dukong-1");
+  const gasPrice = GasPrice.fromString("0.01uom");
+  return await SigningCosmWasmClient.connectWithSigner(
+    "https://rpc.dukong.mantrachain.io",  // Updated RPC endpoint
+    offlineSigner,
+    { gasPrice }
+  );
+}, []);
 
   // Add todo with error handling
   // Add todo with error handling

@@ -1,0 +1,9 @@
+/home/bones/building-on-MANTRA-chain/target/release/deps/libcosmwasm_schema_derive-8920854d257c3242.so: /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/lib.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/cw_serde.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/generate_api.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/query_responses.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/query_responses/context.rs
+
+/home/bones/building-on-MANTRA-chain/target/release/deps/cosmwasm_schema_derive-8920854d257c3242.d: /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/lib.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/cw_serde.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/generate_api.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/query_responses.rs /home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/query_responses/context.rs
+
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/lib.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/cw_serde.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/generate_api.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/query_responses.rs:
+/home/bones/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-schema-derive-1.5.8/src/query_responses/context.rs:
