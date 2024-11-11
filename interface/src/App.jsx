@@ -44,6 +44,7 @@ import {
 import { useAccount, useConnect, useDisconnect } from "graz";
 import { useTodoContract } from "./hooks/useTodoContract";
 import { checkKeplrInstalled, getKeplrInstallUrl } from "./utils/keplrUtils";
+import { mantraChainConfig } from './chain';
 
 export default function App() {
   const {
@@ -70,6 +71,10 @@ export default function App() {
   const bgColor = useColorModeValue("gray.50", "gray.900");
   const headerBgColor = useColorModeValue("white", "gray.800");
   const textColor = useColorModeValue("gray.800", "white");
+
+  useEffect(()=>{
+    console.log("Config = ",mantraChainConfig);
+  },[]);
 
   const getPriorityIcon = (priority) => {
     switch (priority.toLowerCase()) {
@@ -122,25 +127,27 @@ export default function App() {
     }, {});
   }, [todos, toast]);
 
-  const connectWallet = async () => {
-    if (!checkKeplrInstalled()) {
-      const installUrl = getKeplrInstallUrl();
-      if (
-        window.confirm(
-          "Keplr wallet is not installed. Would you like to install it now?"
-        )
-      ) {
-        window.open(installUrl, "_blank");
-      }
-    } else {
-      try {
-        connect({ chainId: "mantra-hongbai-1" });
-      } catch (error) {
-        console.error("Failed to connect:", error);
-        alert("Failed to connect. Please make sure Keplr is set up correctly.");
-      }
+const connectWallet = async () => {
+  if (!checkKeplrInstalled()) {
+    const installUrl = getKeplrInstallUrl();
+    if (window.confirm("Keplr wallet is not installed. Would you like to install it now?")) {
+      window.open(installUrl, "_blank");
     }
-  };
+    return;
+  }
+
+  try {
+    await window.keplr.experimentalSuggestChain(mantraChainConfig);
+    await window.keplr.enable("mantra-dukong-1");
+    await connect({
+      chainId: "mantra-dukong-1",
+      chainInfo: mantraChainConfig,
+    });
+  } catch (error) {
+    console.error("Failed to connect:", error);
+    alert("Failed to connect. Please make sure Keplr is set up correctly.");
+  }
+};
 
   useEffect(() => {
     if (isConnected) {
@@ -462,6 +469,27 @@ export default function App() {
                                       >
                                         {todo.description}
                                       </Text>
+                                      <Spacer />
+                                      <IconButton
+                                        icon={<EditIcon />}
+                                        onClick={() => handleEditTodo(todo)}
+                                        size="sm"
+                                        colorScheme="teal"
+                                        variant="ghost"
+                                        mr={2}
+                                        aria-label="Edit todo"
+                                      />
+                                      <IconButton
+                                        icon={<DeleteIcon />}
+                                        onClick={() =>
+                                          handleDeleteTodo(todo.id)
+                                        }
+                                        size="sm"
+                                        colorScheme="red"
+                                        variant="ghost"
+                                        aria-label="Delete todo"
+                                        isLoading={loading}
+                                      />
                                     </>
                                   )}
                                 </Flex>
