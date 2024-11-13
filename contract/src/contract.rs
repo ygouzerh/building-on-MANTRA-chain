@@ -11,7 +11,7 @@ use crate::error::ContractError;
 use crate::msg::{ExecuteMsg, InstantiateMsg, ListResponse, QueryMsg};
 use crate::state::{Entry, Priority, Status, ENTRY_SEQ, LIST};
 
-const CONTRACT_NAME: &str = "crates.io:cw-to-do-list";
+const CONTRACT_NAME: &str = "to-do-list";
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
 
 #[cfg_attr(not(feature = "library"), entry_point)]
