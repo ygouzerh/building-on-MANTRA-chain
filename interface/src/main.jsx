@@ -1,23 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { GrazProvider } from "graz";
-import { mantraChainConfig } from "./chain.js";
-import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
-import theme from './theme.js'; 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react';
+import { GrazProvider } from 'graz';
+import App from './App';
+import { mantraChainConfig } from './chain';
+
+const grazConfig = {
+  chains: [mantraChainConfig],
+  defaultChain: mantraChainConfig,
+};
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <GrazProvider
-        grazOptions={{
-          chains: [mantraChainConfig],
-        }}
-      >
+    <GrazProvider grazOptions={grazConfig}>
+      <ChakraProvider>
         <App />
-      </GrazProvider>
-    </ChakraProvider>
-  </React.StrictMode>,
-)
+      </ChakraProvider>
+    </GrazProvider>
+  </React.StrictMode>
+);
