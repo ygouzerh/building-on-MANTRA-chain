@@ -1,17 +1,8 @@
-// chain.js
-
 export const mantraChainConfig = {
-  chainId: "mantra-hongbai-1",
-  chainName: "MANTRA Hongbai Testnet",
-  chainSymbolImageUrl:
-    "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/mantra-hongbai/chain.png",
-  rpc: "https://rpc.hongbai.mantrachain.io",
-  rest: "https://api.hongbai.mantrachain.io",
-  nodeProvider: {
-    name: "MANTRA Chain",
-    email: "contact@mantrachain.io",
-    website: "https://www.mantrachain.io",
-  },
+  chainId: "mantra-dukong-1",
+  chainName: "MANTRA Dukong Testnet",
+  rpc: "https://rpc.dukong.mantrachain.io",
+  rest: "https://api.dukong.mantrachain.io",
   bip44: {
     coinType: 118,
   },
@@ -28,6 +19,7 @@ export const mantraChainConfig = {
       coinDenom: "OM",
       coinMinimalDenom: "uom",
       coinDecimals: 6,
+      coinGeckoId: "mantra-chain",
     },
   ],
   feeCurrencies: [
@@ -35,6 +27,7 @@ export const mantraChainConfig = {
       coinDenom: "OM",
       coinMinimalDenom: "uom",
       coinDecimals: 6,
+      coinGeckoId: "mantra-chain",
       gasPriceStep: {
         low: 0.01,
         average: 0.025,
@@ -46,6 +39,7 @@ export const mantraChainConfig = {
     coinDenom: "OM",
     coinMinimalDenom: "uom",
     coinDecimals: 6,
+    coinGeckoId: "mantra-chain",
   },
   features: ["cosmwasm"],
 };
