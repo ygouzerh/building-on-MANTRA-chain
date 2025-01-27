@@ -48,26 +48,9 @@ pub fn execute(
             description,
             status,
             priority,
-            owner,
-        } => {
-            // execute_update_entry(deps, info, id, description, status, priority, owner)
-            Ok(Response::new())
-        }
-        ExecuteMsg::DeleteEntry {
-            id,
-            owner,
-        }=> {
-            // execute_delete_entry(deps, info, id, owner)
-            Ok(Response::new())
-        }
-        // ExecuteMsg::UpdateEntry {
-        //     id,
-        //     description,
-        //     status,
-        //     priority,
-        //     owner
-        // } => execute_update_entry(deps, info, id, description, status, priority, owner),
-        // ExecuteMsg::DeleteEntry { id, owner } => execute_delete_entry(deps, info, id, owner),
+            owner
+        } => execute_update_entry(deps, info, id, description, status, priority, owner),
+        ExecuteMsg::DeleteEntry { id, owner } => execute_delete_entry(deps, info, id, owner),
     }
 }
 
@@ -130,4 +113,56 @@ pub fn query_user_list(
         entries: entries?.into_iter().map(|(_, entry)| entry).collect(),
     };
     Ok(result)
+}
+
+pub fn execute_update_entry(
+    deps: DepsMut,
+    _info: MessageInfo,
+    id: u64,
+    description: Option<String>,
+    status: Option<Status>,
+    priority: Option<Priority>,
+    owner: String,
+) -> Result<Response, ContractError> {
+    let entry = LIST.load(deps.storage, id)?;
+    if owner != entry.owner {
+        return Err(ContractError::Unauthorized {});
+    }
+
+    // Create a new task with the updated fields
+    let updated_entry = Entry {
+        id,
+        description: description.unwrap_or(entry.description),
+        status: status.unwrap_or(entry.status),
+        priority: priority.unwrap_or(entry.priority),
+        owner,
+    };
+
+    // Save the updated task to storage
+    LIST.save(deps.storage, id, &updated_entry)?;
+
+    // Return a success response with the updated task's ID
+    Ok(Response::new()
+        .add_attribute("method", "execute_update_entry")
+        .add_attribute("updated_entry_id", id.to_string()))
+}
+
+pub fn execute_delete_entry(
+    deps: DepsMut,
+    _info: MessageInfo,
+    id: u64,
+    owner: String,
+) -> Result<Response, ContractError> {
+    let entry = LIST.load(deps.storage, id)?;
+    if owner != entry.owner {
+        return Err(ContractError::Unauthorized {});
+    }
+
+    // Remove the task from storage
+    LIST.remove(deps.storage, id);
+
+    // Return a success response with the deleted task's ID
+    Ok(Response::new()
+        .add_attribute("method", "execute_delete_entry")
+        .add_attribute("deleted_entry_id", id.to_string()))
 }
